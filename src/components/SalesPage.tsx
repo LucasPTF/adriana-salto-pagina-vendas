@@ -234,8 +234,8 @@ export function SalesPage({ hero }: { hero: HeroVersion }) {
               <img
                 src="/images/adriana-autoridade.webp"
                 alt="Adriana Salto em seu escritório"
-                width="1024"
-                height="1536"
+                width="992"
+                height="1586"
                 loading="lazy"
               />
             </div>
