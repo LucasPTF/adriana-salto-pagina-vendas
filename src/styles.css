@@ -840,10 +840,57 @@ h3 {
   background: var(--sand);
 }
 
-.next-step-card > p {
+.next-step-card-header {
+  display: grid;
+  grid-template-columns: 176px minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(24px, 4vw, 40px);
+}
+
+.next-step-card-header > p {
+  margin-bottom: 0;
   font-family: var(--font-display);
   font-size: clamp(1.35rem, 2.3vw, 1.9rem);
   line-height: 1.35;
+}
+
+.guarantee-seal {
+  --seal-size: 176px;
+  display: grid;
+  width: var(--seal-size);
+  height: var(--seal-size);
+  flex: 0 0 auto;
+  grid-template-rows: 14px 70px 14px;
+  align-content: center;
+  justify-items: center;
+  row-gap: 3px;
+  border: 1px solid var(--terracotta-dark);
+  border-radius: 50%;
+  color: var(--terracotta-dark);
+}
+
+.guarantee-seal__label,
+.guarantee-seal__unit {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.guarantee-seal__number {
+  display: grid;
+  width: 100%;
+  height: 70px;
+  margin: 0;
+  place-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 66px;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 70px;
+  text-align: center;
 }
 
 .next-step-card dl {
@@ -1511,6 +1558,22 @@ h3 {
     gap: 2px;
   }
 
+  .next-step-card-header {
+    grid-template-columns: 132px minmax(0, 1fr);
+  }
+
+  .guarantee-seal {
+    --seal-size: 132px;
+    grid-template-rows: 12px 52px 12px;
+    row-gap: 1px;
+  }
+
+  .guarantee-seal__number {
+    height: 52px;
+    font-size: 48px;
+    line-height: 52px;
+  }
+
   .offer-grid {
     gap: 38px;
   }
@@ -1568,6 +1631,10 @@ h3 {
     min-height: 88px;
     flex-direction: row;
     align-items: center;
+  }
+
+  .next-step-card-header {
+    grid-template-columns: 1fr;
   }
 }
 

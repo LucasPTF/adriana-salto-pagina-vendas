@@ -280,9 +280,16 @@ export function SalesPage({ hero }: { hero: HeroVersion }) {
               <h2>O workshop entrega a rota inicial. O acompanhamento aprofunda a execução.</h2>
             </div>
             <div className="next-step-card reveal">
-              <p>
-                Ao final do encontro, Adriana apresentará o Método PermaneSER para quem quiser acompanhamento individualizado durante a execução.
-              </p>
+              <div className="next-step-card-header">
+                <div className="guarantee-seal" aria-label="Garantia de 7 dias do Método PermaneSER">
+                  <span className="guarantee-seal__label">Garantia</span>
+                  <strong className="guarantee-seal__number">7</strong>
+                  <span className="guarantee-seal__unit">dias</span>
+                </div>
+                <p>
+                  Ao final do encontro, Adriana apresentará o Método PermaneSER para quem quiser acompanhamento individualizado durante a execução.
+                </p>
+              </div>
               <dl>
                 <div><dt>Duração</dt><dd>8 semanas</dd></div>
                 <div><dt>Investimento informado</dt><dd>R$ 4.000</dd></div>
